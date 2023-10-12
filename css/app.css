@@ -1,0 +1,636 @@
+/* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@500;700&family=Ubuntu:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Style Header */
+header {
+    color: #034C5F;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Ubuntu', 'Poppins', 'Quicksand', 'sans-serif';
+    
+    position: sticky;
+    top: 0;
+}
+
+header.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-block: 1rem;
+    z-index: 999;
+}
+    
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #96BDC9;
+    color: #034C5F;
+}
+
+/* Style Hero Section */
+.hero {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 70px 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #034C5F;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content .content-description {
+    flex: 1 1;
+}
+
+.hero .content .content-description h2 {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+.hero .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.hero .content .content-description button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #034C5F;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.hero .content .content-description button:hover {
+    border: 3px solid #2D3E50;
+    color: #2D3E50;
+    background-color: transparent;
+}
+
+.hero .content .content-description .rank button {
+    padding: .5rem 2rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+    color: #2D3E50;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: gold;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.hero .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+.hero .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #034C5F;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.cta-button:hover {
+    border: 3px solid gold;
+    color: #2D3E50;
+    background-color: khaki;
+}
+
+
+/* Style Paket Section */
+.package {
+    text-align: center;
+    padding: 50px 0;
+    color: #034C5F;
+}
+
+.paket {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.package h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.package p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.paket-card {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 1rem;
+    border-radius: 5px;
+    max-width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.paket-card h3 {
+    font-family: 'Poppins', 'Quicksand', 'sans-serif';
+    font-size: 1rem;
+    text-align: left;
+    color: orange;
+}
+
+.paket-card p {
+    font-family: 'Poppins', 'Quicksand', 'sans-serif';
+    font-size: .8rem;
+    text-align: left;
+    display: flex;
+}
+
+.paket-card img {
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+/* Style Testimoni Section */
+.testimoni {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 50px 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    height: 100%;
+}
+
+figure.testi {
+    font-family: 'Poppins', 'Quicksand', 'sans-serif';
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 320px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: none !important;
+}
+
+figure.testi * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+figure.testi img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 40px 0 0 10px;
+}
+
+figure.testi blockquote {
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    background-color: #96BDC9;
+    padding: 25px 50px 30px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5em;
+    font-style: italic;
+    color: #034C5F;
+}
+
+figure.testi blockquote:before,
+figure.testi blockquote:after {
+    font-family: 'Poppins', 'Quicksand', 'sans-serif';
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+figure.testi blockquote:before {
+    top: 25px;
+    left: 20px;
+}
+
+figure.testi blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+}
+
+figure.testi .arrow {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #96BDC9;
+    margin: 0;
+    position: absolute;
+}
+
+figure.testi .author {
+    position: absolute;
+    bottom: 45px;
+    padding: 0 10px 0 120px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #034C5F;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+figure.testi .author h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+}
+
+figure.testi .author span {
+    font-weight: 500;
+    text-transform: none;
+    color: #96BDC9;
+}
+
+/* Style untuk Kontak */
+.contact-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #034C5F;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #034C5F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #96BDC9;
+}
+
+/* Style Footer */
+footer {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-left: 4%;
+    padding-right: 3%;
+    color: #034C5F;
+}
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 70px;
+    border-top: 1px solid #dee2e6;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: space-between;
+}
+
+.social-media {
+    height: 100%;
+    display: flex;
+}
+
+.social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media li {
+    list-style-type: none;
+}
+
+.social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #034C5F;
+    transition: all .1s ease-in-out;
+}
+
+.social-media li a:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #96BDC9;
+    transition: all .1s ease-in-out;
+}
+
+/* Style .side */
+main .side {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main .side .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main .side .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #034C5F;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main .side .social-media li {
+    list-style-type: none;
+}
+
+main .side .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+main .side .social-media li a:hover {
+    color: #96BDC9;
+}
+
+/* Style elemen aside */
+aside {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    justify-content: center;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+.aside-content {
+    margin-top: 20px;
+}
+
+.aside-content h3 {
+    font-size: 2rem;
+    color: #034C5F;
+}
+
+.aside-content p {
+    font-size: 1rem;
+    color: #034C5F;
+    text-align: justify;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Style Screen */
+@media screen and (max-width: 680px) {
+    header.navbar-container .logo img {
+        width: 100px;
+    }
+    
+    header.navbar-container .nav-list ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem .5rem;
+    }
+    
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        font-size: .8rem;
+        font-weight: 200;
+        color: black;
+        padding: .3rem 1rem;
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+        padding-block: .5rem;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .hero {
+        max-width: 680px;
+        padding: 7%;
+    }
+
+    main .hero .content {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    main .hero .content .content-image img {
+        margin: auto;
+        max-width: 100px;
+    }
+
+    main .package {
+        text-align: center;
+        padding: 7%;
+        color: #034C5F;
+    }
+
+    main .package h2 {
+        font-size: 2rem;
+    }
+    
+    main .package p {
+        font-size: 1rem;
+    }
+
+    main .side {
+        visibility: hidden;
+    }
+
+    aside {
+        max-width: 320px;
+        margin-inline: auto;
+    }
+    
+    .logo-container img {
+        max-width: 100px;
+    }
+    
+    .aside-content {
+        margin-top: 20px;
+    }
+    
+    .aside-content h3 {
+        font-size: 1.5rem;
+        color: #034C5F;
+    }
+}
+
+@media screen and (max-width: 884px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .hero .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .hero .content .content-description h2 {
+        font-size: 2.5rem;
+    }
+
+    main .hero .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .hero .content .content-image {
+        order: -1;
+    }
+
+    .package h2 {
+        font-size: 2.5rem;
+    }
+    
+    .package p {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 7%;
+        border-radius: 5px;
+    }
+
+    main .side .social-media ul {
+        padding: 1.2rem .8rem;
+        gap: 1.2rem;
+    }
+    
+    main .side .social-media li a {
+        font-size: 1.2rem;
+    }
+
+    aside {
+        max-width: 680px;
+        margin-inline: auto;
+    }
+}
