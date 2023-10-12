@@ -2,7 +2,7 @@
 
 ![Dicoding Logo](https://www.dicoding.com/img/dicoding-logo-full.png)
 
-Ini adalah repositori untuk submission kursus "Belajar Dasar Pemrograman Web" dari Dicoding. Pada kursus ini, saya telah belajar tentang dasar HTML,
+Ini adalah repositori untuk submission kursus [Belajar Dasar Pemrograman Web](https://www.dicoding.com/academies/123) dari Dicoding. Pada kursus ini, saya telah belajar tentang dasar HTML,
 penerapan elemen semantic, menerapkan styling menggunakan CSS dan layouting menggunakan flexbox. Saya juga telah mengerjakan beberapa proyek tugas untuk menguji pemahaman saya.
 
 ### Preview
