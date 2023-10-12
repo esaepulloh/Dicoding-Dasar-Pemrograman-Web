@@ -6,8 +6,14 @@ Ini adalah repositori untuk submission kursus "Belajar Dasar Pemrograman Web" da
 penerapan elemen semantic, menerapkan styling menggunakan CSS dan layouting menggunakan flexbox. Saya juga telah mengerjakan beberapa proyek tugas untuk menguji pemahaman saya.
 
 ### Preview
-<img src="screenshot/preview1.png">
-<img src="screenshot/preview2.png" width=256>
+
+| Tampilan Laptop |
+| ----------------------------------------- |
+| ![Screenshot Proyek 3](cuplikan_layar/laptop.png) |
+
+| Tampilan Tablet  | Tampilan Handphone |
+| ------------------------------------------ | ----------------------------------------- |
+| ![Screenshot Proyek 1](cuplikan_layar/tablet.png) | ![Screenshot Proyek 2](cuplikan_layar/hp.png) |
 
 ## Kriteria Submission
 - Terdapat elemen  ```<header> ``` ,  ```<footer>```,  ```<main>```,  ```<article>```, dan  ```<aside>``` di berkas HTML.
